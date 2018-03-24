@@ -56,7 +56,7 @@ function taskJsDev() {
 }
 
 function taskLess() {
-  return gulp.src(['src/public/css/*.less', '!src/public/css/lib/**/*'])
+  return gulp.src(['src/public/css/**/*.less', '!src/public/css/lib/**/*'])
   .pipe(less())
   .pipe(autoprefixer())
   .pipe(minifier())
