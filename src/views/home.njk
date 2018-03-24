@@ -1,8 +1,5 @@
 {% extends locals.path + '/index.njk' %}
 
-{% block head %}
-{% endblock %}
-
 {% block content %}
 <div class="contact" id="particles-js">
   <div id="contact-texts">
@@ -138,11 +135,8 @@
 {% if not lastConf.empty %}
 <script src="/files/js/attend-conf.js"></script>
 {% endif %}
-
 <script src="/files/js/lib/particles.min.js"></script>
 <script>
-  particlesJS.load('particles-js', '/files/js/lib/p.json', function() {
-  });
+  particlesJS.load('particles-js', '/files/js/lib/p.json');
 </script>
-
 {% endblock %}
